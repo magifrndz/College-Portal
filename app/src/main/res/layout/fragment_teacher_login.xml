@@ -1,13 +1,36 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.rejimalson.collegeportal.fragment.TeacherLoginFragment">
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context="com.rejimalson.collegeportal.fragment.TeacherLoginFragment">
 
-		<!-- TODO: Update blank fragment layout -->
-		<TextView
+		<View
+				android:id="@+id/divider_view_id"
 				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:text="Teacher"/>
+				android:layout_height="1dp"
+				android:background="@color/colorActionBar"
+				android:layout_centerInParent="true"
+				android:visibility="invisible"/>
 
-</FrameLayout>
+		<ImageView
+				android:id="@+id/teacher_img_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_teacher"
+				android:contentDescription="@string/teacher_image_desc"
+				android:layout_centerHorizontal="true"
+				android:layout_above="@+id/divider_view_id"/>
+
+		<Button
+				android:id="@+id/teacher_login_btn_id"
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:text="@string/login_btn_text"
+				android:textColor="@android:color/white"
+				android:background="@color/colorActionBar"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/divider_view_id"
+				android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
