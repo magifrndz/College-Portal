@@ -15,7 +15,7 @@
 		<ImageView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:src="@drawable/ic_SplashScreen_logo"
+				android:src="@drawable/ic_splashscreen_logo"
 				android:contentDescription="@string/desc_splash_screen_image"
 				android:layout_centerInParent="true"/>
 
